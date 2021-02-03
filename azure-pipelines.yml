@@ -9,6 +9,8 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+container: ubuntu:18.04
+
 steps:
 - task: NodeTool@0
   inputs:
@@ -18,4 +20,6 @@ steps:
 - script: |
     yarn install
     yarn run build
+    printenv
+    uname -a
   displayName: 'install & build'
