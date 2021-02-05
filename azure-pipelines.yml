@@ -6,7 +6,8 @@
 trigger:
 - master
 
-pool: Scale Set
+pool:
+  vmImage: 'ubuntu-latest'
 
 container: netlify/build:latest
 
