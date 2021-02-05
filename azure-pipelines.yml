@@ -9,9 +9,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-container: 
-  image: testbuildrepo.azurecr.io/netlify:v1
-  endpoint: acr_test_build_repo
+container: netflify/build:latest
 
 steps:
 - task: NodeTool@0
